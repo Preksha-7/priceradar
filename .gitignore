@@ -1,0 +1,33 @@
+cat > .gitignore << 'EOF'
+# Environment files — NEVER commit these
+.env
+.env.local
+.env.production
+**/.env
+**/.env.local
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Build outputs
+frontend/build/
+dist/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+
+# Docker
+*.tar
+EOF
